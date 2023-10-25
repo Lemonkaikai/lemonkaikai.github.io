@@ -16,17 +16,18 @@
   <meta name="author" content="KAI">
   <meta name="keywords" content="">
   
-    <meta name="description" content="前言本課程主要參考Kaggle的 Introduction to programming，因為自己最近主要玩kaggle比較多，而且看了挺多的教學來說kaggle的教學確實挺好的，如果大家有興趣的話可以去他的官網玩那個教學系列 Kaggle。 為什麼會寫這篇教學先呢，是想大家就算是沒有program背景也能學會programming，而且還可以從0開始到自己去訓練一個機器學習的模型。之後的blog">
+    <meta name="description" content="《前言》這篇文章主要參考Kaggle的”Introduction to programming”，因為自己最近主要玩Kaggle比較多，而且看了挺多的教學，相對來說Kaggle的教學內容更為優秀和全面。如果大家有興趣的話，可以去Kaggle的官網玩他們的教學系列 點我跳轉👉🏻Kaggle👈🏻。 先來說說為什麼我會寫這篇文章吧，主要是日常生活中很多朋友都好奇我們工程師是幹什麼的，他們對編程抱">
 <meta property="og:type" content="article">
 <meta property="og:title" content="1. Arithmetic and Variables">
 <meta property="og:url" content="http://example.com/2023/10/19/introduction-to-programming/index.html">
 <meta property="og:site_name" content="KAI Blog">
-<meta property="og:description" content="前言本課程主要參考Kaggle的 Introduction to programming，因為自己最近主要玩kaggle比較多，而且看了挺多的教學來說kaggle的教學確實挺好的，如果大家有興趣的話可以去他的官網玩那個教學系列 Kaggle。 為什麼會寫這篇教學先呢，是想大家就算是沒有program背景也能學會programming，而且還可以從0開始到自己去訓練一個機器學習的模型。之後的blog">
+<meta property="og:description" content="《前言》這篇文章主要參考Kaggle的”Introduction to programming”，因為自己最近主要玩Kaggle比較多，而且看了挺多的教學，相對來說Kaggle的教學內容更為優秀和全面。如果大家有興趣的話，可以去Kaggle的官網玩他們的教學系列 點我跳轉👉🏻Kaggle👈🏻。 先來說說為什麼我會寫這篇文章吧，主要是日常生活中很多朋友都好奇我們工程師是幹什麼的，他們對編程抱">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="https://raw.githubusercontent.com/Lemonkaikai/pics/main/%E8%9E%A2%E5%B9%95%E6%88%AA%E5%9C%96%202023-10-19%20%E4%B8%8A%E5%8D%882.09.52.png">
 <meta property="og:image" content="https://raw.githubusercontent.com/Lemonkaikai/pics/main/202310190223520.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/Lemonkaikai/pics/main/202310252053353.png">
 <meta property="article:published_time" content="2023-10-18T17:18:47.000Z">
-<meta property="article:modified_time" content="2023-10-18T18:24:10.336Z">
+<meta property="article:modified_time" content="2023-10-25T12:58:56.213Z">
 <meta property="article:author" content="KAI">
 <meta property="article:tag" content="learning">
 <meta property="article:tag" content="beginner">
@@ -224,7 +225,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          780 words
+          1.4k words
         
       </span>
     
@@ -235,7 +236,7 @@
         
         
         
-          7 mins
+          12 mins
         
       </span>
     
@@ -277,20 +278,24 @@
             
               <div class="markdown-body">
                 
-                <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>本課程主要參考Kaggle的 Introduction to programming，因為自己最近主要玩kaggle比較多，而且看了挺多的教學來說kaggle的教學確實挺好的，如果大家有興趣的話可以去他的官網玩那個教學系列 <a target="_blank" rel="noopener" href="https://www.kaggle.com/code/alexisbcook/arithmetic-and-variables">Kaggle</a>。</p>
-<p>為什麼會寫這篇教學先呢，是想大家就算是沒有program背景也能學會programming，而且還可以從0開始到自己去訓練一個機器學習的模型。之後的blog也是偏Data Science為主。</p>
-<p>所以在此之前還是會教一些基礎的python語法和機制。</p>
-<h1 id="Printing"><a href="#Printing" class="headerlink" title="Printing"></a>Printing</h1><p>print 這個操作對於有programming背景的人來說，都在熟悉不過了。這也是學習任何語言之前最簡單同時也是最重要的一部。</p>
-<p>來吧，開始吧，python 啟動：</p>
+                <h1 id="《前言》"><a href="#《前言》" class="headerlink" title="《前言》"></a>《前言》</h1><p>這篇文章主要參考Kaggle的”Introduction to programming”，因為自己最近主要玩Kaggle比較多，而且看了挺多的教學，相對來說Kaggle的教學內容更為優秀和全面。如果大家有興趣的話，可以去Kaggle的官網玩他們的教學系列 <a target="_blank" rel="noopener" href="https://www.kaggle.com/code/alexisbcook/arithmetic-and-variables">點我跳轉👉🏻Kaggle👈🏻</a>。</p>
+<p>先來說說為什麼我會寫這篇文章吧，主要是日常生活中很多朋友都好奇我們工程師是幹什麼的，他們對編程抱有好奇心的同時，也因為從來沒有接觸過編程方面相關的知識，所以大多數都是望而卻步不敢開始。</p>
+<p>因此我想寫一些文章教學，讓即使沒有編程背景的人看完之後，也能對編程有一些基礎的認知。</p>
+<p>想深入學習編程的小夥伴還可以從零開始，慢慢學會如何靠自己去訓練一個機器學習的模型。</p>
+<p>之後的文章也是以數據科學(Data Science)為主，所以在此之前還是會教一些基礎的Python語法和機制。</p>
+<h1 id="《工作環境》"><a href="#《工作環境》" class="headerlink" title="《工作環境》"></a>《工作環境》</h1><p>對於Data Science的工作來說，我們更喜歡用Jupyter Notebook來寫一些python的程序。因為它更容易去觀察數據的變化（這個我們之後會細講）。</p>
+<p>如果沒有安裝任何環境的朋友可以先試試Jupyter Lite。點我跳轉<a target="_blank" rel="noopener" href="https://jupyter.org/try-jupyter/lab/index.html">👉🏻Jupyter Lite👈🏻</a>這裡試試。<br><img src="https://raw.githubusercontent.com/Lemonkaikai/pics/main/%E8%9E%A2%E5%B9%95%E6%88%AA%E5%9C%96%202023-10-19%20%E4%B8%8A%E5%8D%882.09.52.png" srcset="/img/loading.gif" lazyload></p>
+<p>在右邊的視窗中，找到Notebook的標題，下面點擊python(Pyodide)就完成啦~</p>
+<p>那麼～　python 啟動(￣▽￣)／</p>
+<h1 id="《Printing》"><a href="#《Printing》" class="headerlink" title="《Printing》"></a>《Printing》</h1><p>首先，我們先試試輸入以下的指令，然後執行它。</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-built_in">print</span>(<span class="hljs-string">&#x27;hello world&#x27;</span>)<br></code></pre></td></tr></table></figure>
 
-<p>如果你能順利執行，那麼恭喜你，你已經是一個python的入門選手了。不過對於Data Science的工作來說，我們更喜歡用Jupyter Notebook來寫一些python的程序。因為notebook更容易去觀察數據的變化（這個我們之後會細講）。</p>
-<p>如果沒有安裝任何環境的朋友可以先上 <a target="_blank" rel="noopener" href="https://jupyter.org/try-jupyter/lab/index.html">Jupyter Lite</a>這裡試試。<br><img src="https://raw.githubusercontent.com/Lemonkaikai/pics/main/%E8%9E%A2%E5%B9%95%E6%88%AA%E5%9C%96%202023-10-19%20%E4%B8%8A%E5%8D%882.09.52.png" srcset="/img/loading.gif" lazyload></p>
-<p>在那個notebook下面點擊python（Pyodide）就行啦</p>
-<h1 id="Arithmetic"><a href="#Arithmetic" class="headerlink" title="Arithmetic"></a>Arithmetic</h1><p>我們來嘗試打印以下的語句：</p>
+<p>如果你能順利執行，那麼恭喜你，你已經是一個python的入門選手了。</p>
+<p>“print” 這個指令對於有編程背景的人來說，都再熟悉不過了。它是學習任何編程語言之前最簡單，同時也是最重要的一步。這個指令的作用是 “顯示資訊”。</p>
+<h1 id="《Arithmetic》"><a href="#《Arithmetic》" class="headerlink" title="《Arithmetic》"></a>《Arithmetic》</h1><p>我們來嘗試輸入以下的指令並且執行它：</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-built_in">print</span>(<span class="hljs-number">1</span>+<span class="hljs-number">1</span>)<br></code></pre></td></tr></table></figure>
 
-<p>具體的算數如下所示：</p>
+<p>具體的運算符號和例子如下所示：</p>
 <table>
 <thead>
 <tr>
@@ -325,10 +330,21 @@
 <td>3 ** 3 &#x3D; 27</td>
 </tr>
 </tbody></table>
-<p>來嘗試打印以下的python語句吧！</p>
+<p>來嘗試輸入以下的python指令吧！</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-built_in">print</span>((((<span class="hljs-number">1</span> + <span class="hljs-number">3</span>) - <span class="hljs-number">2</span>) * <span class="hljs-number">10</span> / <span class="hljs-number">5</span>) ** <span class="hljs-number">2</span>)<br></code></pre></td></tr></table></figure>
 
 <p><img src="https://raw.githubusercontent.com/Lemonkaikai/pics/main/202310190223520.png" srcset="/img/loading.gif" lazyload></p>
+<h1 id="《Comments》"><a href="#《Comments》" class="headerlink" title="《Comments》"></a>《Comments》</h1><p>Comments 也是python的一個重要技能，用來表示每段代碼執行的邏輯。</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-comment"># print a magic number</span><br><span class="hljs-built_in">print</span>(<span class="hljs-number">3</span>)<br></code></pre></td></tr></table></figure>
+
+<p>python的語言由機器來看，那麼comments就由我們人類來看啦！當我們寫大型project的時候，看代碼的邏輯不如看comment來得快。</p>
+<h1 id="《Variables》"><a href="#《Variables》" class="headerlink" title="《Variables》"></a>《Variables》</h1><p>上面我們嘗試了打印一些算式，當我們想把他們保存下來該怎麼辦呢？這時候Variable出現就可以把他們保存下來。</p>
+<p>舉個栗子🌰：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs python">number_3 = <span class="hljs-number">3</span><br>arithmetic_1 = (((<span class="hljs-number">1</span> + <span class="hljs-number">3</span>) - <span class="hljs-number">2</span>) * <span class="hljs-number">10</span> / <span class="hljs-number">5</span>) ** <span class="hljs-number">2</span><br><br><span class="hljs-built_in">print</span>(number_3)<br><span class="hljs-built_in">print</span>(arithmetic_1)<br></code></pre></td></tr></table></figure>
+
+<p>看！ 我們已經把結果分別儲存在<code>number_3</code>和<code>arithmetic_1</code>裡面啦</p>
+<p><img src="https://raw.githubusercontent.com/Lemonkaikai/pics/main/202310252053353.png" srcset="/img/loading.gif" lazyload></p>
+<h1 id="《結尾》"><a href="#《結尾》" class="headerlink" title="《結尾》"></a>《結尾》</h1><p>第一課已經結束啦，雖然很簡單還是拖了很久。雖遲但到吧。<br>之後也會慢慢更的，希望可以加快迭代的速度。</p>
 
                 
               </div>
