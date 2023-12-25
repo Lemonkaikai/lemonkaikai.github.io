@@ -16,27 +16,23 @@
   <meta name="author" content="KAI">
   <meta name="keywords" content="">
   
-    <meta name="description" content="《前言》這篇文章主要參考Kaggle的”Introduction to programming”，因為自己最近主要玩Kaggle比較多，而且看了挺多的教學，相對來說Kaggle的教學內容更為優秀和全面。如果大家有興趣的話，可以去Kaggle的官網玩他們的教學系列 點我跳轉👉🏻Kaggle👈🏻。 先來說說為什麼我會寫這篇文章吧，主要是日常生活中很多朋友都好奇我們工程師是幹什麼的，他們對編程抱">
+    <meta name="description" content="前言時隔兩個月我又回來了，中途有挺多意外的，希望今年和明年都能順順利利的度過。也祝大家聖誕節快樂啦🎉！！！ Function 介紹在這節課裡，我們將會介紹一下Function（函數）這個概念。函數的在一個程序裡面有很重要的作用，個人簡單的總結一下它的三個重要的作用：  重用性 解釋性 解耦性  Function 結構function 的結構通常是以下這樣的： 12def add_one(x):">
 <meta property="og:type" content="article">
-<meta property="og:title" content="1. Arithmetic and Variables">
-<meta property="og:url" content="http://example.com/2023/10/19/introduction-to-programming/index.html">
+<meta property="og:title" content="2. Function">
+<meta property="og:url" content="http://example.com/2023/12/25/Function/index.html">
 <meta property="og:site_name" content="KAI Blog">
-<meta property="og:description" content="《前言》這篇文章主要參考Kaggle的”Introduction to programming”，因為自己最近主要玩Kaggle比較多，而且看了挺多的教學，相對來說Kaggle的教學內容更為優秀和全面。如果大家有興趣的話，可以去Kaggle的官網玩他們的教學系列 點我跳轉👉🏻Kaggle👈🏻。 先來說說為什麼我會寫這篇文章吧，主要是日常生活中很多朋友都好奇我們工程師是幹什麼的，他們對編程抱">
+<meta property="og:description" content="前言時隔兩個月我又回來了，中途有挺多意外的，希望今年和明年都能順順利利的度過。也祝大家聖誕節快樂啦🎉！！！ Function 介紹在這節課裡，我們將會介紹一下Function（函數）這個概念。函數的在一個程序裡面有很重要的作用，個人簡單的總結一下它的三個重要的作用：  重用性 解釋性 解耦性  Function 結構function 的結構通常是以下這樣的： 12def add_one(x):">
 <meta property="og:locale" content="en_US">
-<meta property="og:image" content="https://raw.githubusercontent.com/Lemonkaikai/pics/main/%E8%9E%A2%E5%B9%95%E6%88%AA%E5%9C%96%202023-10-19%20%E4%B8%8A%E5%8D%882.09.52.png">
-<meta property="og:image" content="https://raw.githubusercontent.com/Lemonkaikai/pics/main/202310190223520.png">
-<meta property="og:image" content="https://raw.githubusercontent.com/Lemonkaikai/pics/main/202310252053353.png">
-<meta property="article:published_time" content="2023-10-18T17:18:47.000Z">
-<meta property="article:modified_time" content="2023-10-25T13:13:37.680Z">
+<meta property="article:published_time" content="2023-12-25T14:08:35.000Z">
+<meta property="article:modified_time" content="2023-12-25T15:11:53.236Z">
 <meta property="article:author" content="KAI">
 <meta property="article:tag" content="learning">
 <meta property="article:tag" content="beginner">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://raw.githubusercontent.com/Lemonkaikai/pics/main/%E8%9E%A2%E5%B9%95%E6%88%AA%E5%9C%96%202023-10-19%20%E4%B8%8A%E5%8D%882.09.52.png">
   
   
   
-  <title>1. Arithmetic and Variables - KAI Blog</title>
+  <title>2. Function - KAI Blog</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -202,7 +198,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="1. Arithmetic and Variables"></span>
+            <span id="subtitle" data-typed-text="2. Function"></span>
           
         </div>
 
@@ -213,8 +209,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2023-10-19 01:18" pubdate>
-          October 19, 2023 am
+        <time datetime="2023-12-25 22:08" pubdate>
+          December 25, 2023 pm
         </time>
       </span>
     
@@ -225,7 +221,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          1.5k words
+          2.3k words
         
       </span>
     
@@ -236,7 +232,7 @@
         
         
         
-          13 mins
+          19 mins
         
       </span>
     
@@ -273,78 +269,61 @@
       <div class="container nopadding-x-md" id="board-ctn">
         <div id="board">
           <article class="post-content mx-auto">
-            <h1 id="seo-header">1. Arithmetic and Variables</h1>
+            <h1 id="seo-header">2. Function</h1>
             
             
               <div class="markdown-body">
                 
-                <h1 id="《前言》"><a href="#《前言》" class="headerlink" title="《前言》"></a>《前言》</h1><p>這篇文章主要參考Kaggle的”Introduction to programming”，因為自己最近主要玩Kaggle比較多，而且看了挺多的教學，相對來說Kaggle的教學內容更為優秀和全面。如果大家有興趣的話，可以去Kaggle的官網玩他們的教學系列 <a target="_blank" rel="noopener" href="https://www.kaggle.com/code/alexisbcook/arithmetic-and-variables">點我跳轉👉🏻Kaggle👈🏻</a>。</p>
-<p>先來說說為什麼我會寫這篇文章吧，主要是日常生活中很多朋友都好奇我們工程師是幹什麼的，他們對編程抱有好奇心的同時，也因為從來沒有接觸過編程方面相關的知識，所以大多數都是望而卻步不敢開始。</p>
-<p>因此我想寫一些文章教學，讓即使沒有編程背景的人看完之後，也能對編程有一些基礎的認知。</p>
-<p>想深入學習編程的小夥伴還可以從零開始，慢慢學會如何靠自己去訓練一個機器學習的模型。</p>
-<p>之後的文章也是以數據科學(Data Science)為主，所以在此之前還是會教一些基礎的Python語法和機制。</p>
-<h1 id="《工作環境》"><a href="#《工作環境》" class="headerlink" title="《工作環境》"></a>《工作環境》</h1><p>對於Data Science的工作來說，我們更喜歡用Jupyter Notebook來寫一些python的程序。因為它更容易去觀察數據的變化（這個我們之後會細講）。</p>
-<p>如果沒有安裝任何環境的朋友可以先試試Jupyter Lite。點我跳轉<a target="_blank" rel="noopener" href="https://jupyter.org/try-jupyter/lab/index.html">👉🏻Jupyter Lite👈🏻</a>這裡試試。<br><img src="https://raw.githubusercontent.com/Lemonkaikai/pics/main/%E8%9E%A2%E5%B9%95%E6%88%AA%E5%9C%96%202023-10-19%20%E4%B8%8A%E5%8D%882.09.52.png" srcset="/img/loading.gif" lazyload></p>
-<p>在右邊的視窗中，找到Notebook的標題，下面點擊python(Pyodide)就完成啦~</p>
-<p>那麼～　python 啟動(￣▽￣)／</p>
-<h1 id="《Printing》"><a href="#《Printing》" class="headerlink" title="《Printing》"></a>《Printing》</h1><p>首先，我們先試試輸入以下的指令，然後執行它。</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-built_in">print</span>(<span class="hljs-string">&#x27;hello world&#x27;</span>)<br></code></pre></td></tr></table></figure>
+                <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>時隔兩個月我又回來了，中途有挺多意外的，希望今年和明年都能順順利利的度過。也祝大家聖誕節快樂啦🎉！！！</p>
+<h1 id="Function-介紹"><a href="#Function-介紹" class="headerlink" title="Function 介紹"></a>Function 介紹</h1><p>在這節課裡，我們將會介紹一下Function（函數）這個概念。函數的在一個程序裡面有很重要的作用，個人簡單的總結一下它的三個重要的作用：</p>
+<ol>
+<li>重用性</li>
+<li>解釋性</li>
+<li>解耦性</li>
+</ol>
+<h1 id="Function-結構"><a href="#Function-結構" class="headerlink" title="Function 結構"></a>Function 結構</h1><p>function 的結構通常是以下這樣的：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-keyword">def</span> <span class="hljs-title function_">add_one</span>(<span class="hljs-params">x</span>):<br>    <span class="hljs-keyword">return</span> x + <span class="hljs-number">1</span><br></code></pre></td></tr></table></figure>
 
-<p>如果你能順利執行，那麼恭喜你，你已經是一個python的入門選手了。</p>
-<p>“print” 這個指令對於有編程背景的人來說，都再熟悉不過了。它是學習任何編程語言之前最簡單，同時也是最重要的一步。這個指令的作用是 “顯示資訊”。</p>
-<h1 id="《Arithmetic》"><a href="#《Arithmetic》" class="headerlink" title="《Arithmetic》"></a>《Arithmetic》</h1><p>我們來嘗試輸入以下的指令並且執行它：</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-built_in">print</span>(<span class="hljs-number">1</span>+<span class="hljs-number">1</span>)<br></code></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-keyword">def</span> <span class="hljs-title function_">print_hello_world</span>():<br>    <span class="hljs-built_in">print</span>(<span class="hljs-string">&#x27;hello world&#x27;</span>)<br></code></pre></td></tr></table></figure>
+<p>以這兩個例子來說，一個function的結構有3個要素：</p>
+<ol>
+<li>def 關鍵詞： 意味著define </li>
+<li>function 名字： <code>add_one</code> or <code>print_hello_world</code></li>
+<li>parameter: x 可以作為variable（上節提到的）的參數傳入進function</li>
+</ol>
+<p>此外，相信聰明的你也發現了，這兩個function也有不同之處：<br>那就是<code>return</code>返回值。<br>為什麼我們需要返回值呢。</p>
+<p>在python裡面，function是可以有返回值或者無返回值的兩種形式。在<code>add_one</code>function裡面，x作為參數傳入，並且作x+1進行返回。</p>
+<p>我們簡單舉個🌰：</p>
+<figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs stylus"><span class="hljs-function"><span class="hljs-title">f</span><span class="hljs-params">(x)</span></span> = x + <span class="hljs-number">1</span><br></code></pre></td></tr></table></figure>
+<p>不知道大家有沒有種被中學數學支配的恐懼感。其實function原理就是這種數學概念。</p>
+<figure class="highlight apache"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs apache"><span class="hljs-attribute">when</span> x = <span class="hljs-number">1</span><br><span class="hljs-attribute">f</span>(<span class="hljs-number">1</span>) = <span class="hljs-number">1</span> + <span class="hljs-number">1</span> = <span class="hljs-number">2</span><br><span class="hljs-attribute">when</span> x = <span class="hljs-number">2</span><br><span class="hljs-attribute">f</span>(<span class="hljs-number">2</span>) = <span class="hljs-number">2</span> + <span class="hljs-number">1</span> = <span class="hljs-number">3</span><br><span class="hljs-attribute">when</span> x = <span class="hljs-number">3</span><br><span class="hljs-attribute">f</span>(<span class="hljs-number">3</span>) = <span class="hljs-number">3</span> + <span class="hljs-number">1</span> = <span class="hljs-number">4</span><br></code></pre></td></tr></table></figure>
 
-<p>具體的運算符號和例子如下所示：</p>
-<table>
-<thead>
-<tr>
-<th>Operation</th>
-<th>Symbol</th>
-<th>Example</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>Addition</td>
-<td>+</td>
-<td>1 + 1 &#x3D; 2</td>
-</tr>
-<tr>
-<td>Subtraction</td>
-<td>-</td>
-<td>1000 - 7 &#x3D; 993</td>
-</tr>
-<tr>
-<td>Multiplication</td>
-<td>*</td>
-<td>10 * 4 &#x3D; 40</td>
-</tr>
-<tr>
-<td>Division</td>
-<td>&#x2F;</td>
-<td>9 &#x2F; 3 &#x3D; 3</td>
-</tr>
-<tr>
-<td>Exponent</td>
-<td>**</td>
-<td>3 ** 3 &#x3D; 27</td>
-</tr>
-</tbody></table>
-<p>來嘗試輸入以下的python指令吧！</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-built_in">print</span>((((<span class="hljs-number">1</span> + <span class="hljs-number">3</span>) - <span class="hljs-number">2</span>) * <span class="hljs-number">10</span> / <span class="hljs-number">5</span>) ** <span class="hljs-number">2</span>)<br></code></pre></td></tr></table></figure>
+<p>我們在python裡面可以用：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-keyword">def</span> <span class="hljs-title function_">add_one</span>(<span class="hljs-params">x</span>):<br>    <span class="hljs-keyword">return</span> x + <span class="hljs-number">1</span><br><br>y = add_one(<span class="hljs-number">1</span>) <span class="hljs-comment"># y = 2</span><br></code></pre></td></tr></table></figure>
 
-<p><img src="https://raw.githubusercontent.com/Lemonkaikai/pics/main/202310190223520.png" srcset="/img/loading.gif" lazyload></p>
-<h1 id="《Comments》"><a href="#《Comments》" class="headerlink" title="《Comments》"></a>《Comments》</h1><p>Comments 也是python的一個重要技能，用來為代碼寫注釋，方便我們IT🐶在交接工作或者交流時候迅速理解代碼的運行邏輯。<br>至於Comment的使用方法也很簡單，只需要在段落開始位置加上<code>#</code>符號，就可以編寫注釋</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-comment"># print a magic number</span><br><span class="hljs-built_in">print</span>(<span class="hljs-number">3</span>)<br></code></pre></td></tr></table></figure>
+<p>噹噹噹！我們就成功使用了function啦。簡單解釋一下，首先我們定義了一個add_one的function，這個代碼在python裡面是不被直接執行的，直到我們調用它在<code>y = add_one(1)</code>這一行裡面。</p>
+<h1 id="Function-作用"><a href="#Function-作用" class="headerlink" title="Function 作用"></a>Function 作用</h1><h2 id="重用性"><a href="#重用性" class="headerlink" title="重用性"></a>重用性</h2><p>我們來解釋一下重用性這個概念：</p>
+<p>在代碼裡面我們盡可能的追求代碼的可重用性，為什麼呢？我們繼續舉🌰，看以下代碼：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-comment"># cal the area of circle a, b ,c</span><br>r1 = <span class="hljs-number">3</span><br>a_area = <span class="hljs-number">3.14</span> * r1 * r1<br>r2 = <span class="hljs-number">4</span><br>b_area = <span class="hljs-number">3.14</span> * r2 * r2<br>r2 = <span class="hljs-number">5</span><br>c_area = <span class="hljs-number">3.14</span> * r3 * r3<br></code></pre></td></tr></table></figure>
+<p>在這種情況下，其實我們會需要打很多重複的代碼。<br>我們來看看function下的代碼：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-keyword">def</span> <span class="hljs-title function_">circle_area</span>(<span class="hljs-params">r</span>):<br>    <span class="hljs-keyword">return</span> <span class="hljs-number">3.14</span> * r * r<br><br>r1 = <span class="hljs-number">3</span><br>a_area = circle_area(r1)<br>r2 = <span class="hljs-number">4</span><br>b_area = circle_area(r2)<br>r2 = <span class="hljs-number">5</span><br>c_area = circle_area(r3)<br></code></pre></td></tr></table></figure>
 
-<p>python的語言由機器來看，那麼comments就由我們人類來看啦！當我們寫大型project的時候，看代碼的邏輯不如看comment來得快。</p>
-<h1 id="《Variables》"><a href="#《Variables》" class="headerlink" title="《Variables》"></a>《Variables》</h1><p>上面我們嘗試了打印一些算式，當我們想把他們保存下來該怎麼辦呢？這時候我們可以使用Variable來保存他們。</p>
-<p>舉個栗子🌰：</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs python">number_3 = <span class="hljs-number">3</span><br>arithmetic_1 = (((<span class="hljs-number">1</span> + <span class="hljs-number">3</span>) - <span class="hljs-number">2</span>) * <span class="hljs-number">10</span> / <span class="hljs-number">5</span>) ** <span class="hljs-number">2</span><br><br><span class="hljs-built_in">print</span>(number_3)<br><span class="hljs-built_in">print</span>(arithmetic_1)<br></code></pre></td></tr></table></figure>
+<p>雖然也有很多重複的代碼，但如果想像一下，這個重複的代碼是10行，100行可以用一個function代替是不是方便很多。</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><code class="hljs python">name1 = <span class="hljs-string">&#x27;KAI&#x27;</span><br>sex1 = <span class="hljs-string">&#x27;male&#x27;</span><br>major1 = <span class="hljs-string">&#x27;CS&#x27;</span><br><span class="hljs-built_in">print</span>(<span class="hljs-string">&#x27;name: &#x27;</span> + name1)<br><span class="hljs-built_in">print</span>(<span class="hljs-string">&#x27;sex: &#x27;</span> + sex1)<br><span class="hljs-built_in">print</span>(<span class="hljs-string">&#x27;major: &#x27;</span> + major1)<br>name2 = <span class="hljs-string">&#x27;KAIKAI&#x27;</span><br>sex2 = <span class="hljs-string">&#x27;male&#x27;</span><br>major2 = <span class="hljs-string">&#x27;EE&#x27;</span><br><span class="hljs-built_in">print</span>(<span class="hljs-string">&#x27;name: &#x27;</span> + name2)<br><span class="hljs-built_in">print</span>(<span class="hljs-string">&#x27;sex: &#x27;</span> + sex2)<br><span class="hljs-built_in">print</span>(<span class="hljs-string">&#x27;major: &#x27;</span> + major2)<br></code></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-keyword">def</span> <span class="hljs-title function_">print_personal_info</span>(<span class="hljs-params">name, sex, major</span>)<br>    <span class="hljs-built_in">print</span>(<span class="hljs-string">&#x27;name: &#x27;</span> + name)<br>    <span class="hljs-built_in">print</span>(<span class="hljs-string">&#x27;sex: &#x27;</span> + sex)<br>    <span class="hljs-built_in">print</span>(<span class="hljs-string">&#x27;major: &#x27;</span> + major)<br><br>print_personal_info(<span class="hljs-string">&#x27;KAI&#x27;</span>,<span class="hljs-string">&#x27;male&#x27;</span>,<span class="hljs-string">&#x27;CS&#x27;</span>)<br>print_personal_info(<span class="hljs-string">&#x27;KAIKAI&#x27;</span>,<span class="hljs-string">&#x27;male&#x27;</span>,<span class="hljs-string">&#x27;EE&#x27;</span>)<br></code></pre></td></tr></table></figure>
 
-<p>看！ 我們已經把結果分別儲存在<code>number_3</code>和<code>arithmetic_1</code>裡面啦</p>
-<p><img src="https://raw.githubusercontent.com/Lemonkaikai/pics/main/202310252053353.png" srcset="/img/loading.gif" lazyload></p>
-<h1 id="《結尾》"><a href="#《結尾》" class="headerlink" title="《結尾》"></a>《結尾》</h1><p>第一課已經結束啦，雖然很簡單還是拖了很久。雖遲但到吧。<br>之後也會慢慢更的，希望可以加快迭代的速度。</p>
+<p>對比這兩個例子，這樣是不是方便很多呢～</p>
+<h2 id="解釋性"><a href="#解釋性" class="headerlink" title="解釋性"></a>解釋性</h2><p>這個也是我們程序猿需要的職業操守，如果讓我評價什麼是好的代碼。</p>
+<ul>
+<li>我認為不是花裡胡哨的數據結構和算法</li>
+<li>也不是各種高大上的面向對象</li>
+</ul>
+<p>而是一段不用注釋也能看懂的代碼。我相信會有人喜歡那種寫別人看不懂的代碼，讓別人看起來好像很厲害。</p>
+<p>在跟人層面，其實我們寫的代碼，在過了一個星期後，也不記得當時寫了什麼（沒錯，正是在下🤦）。可以快速的幫助自己回憶起自己的思路和想法。</p>
+<p>在職場層面，我們應該盡可能的讓自己的同事們或者上司容易的去理解你寫的代碼，我們在尋求他們的幫助時，他們可以更快的幫你解決你遇到的問題。而不是花費時間在猜疑你的代碼hhh。</p>
+<h2 id="解耦性"><a href="#解耦性" class="headerlink" title="解耦性"></a>解耦性</h2><p>這個可能就比較複雜，可能會之後再解釋。<del>絕對沒有咕的意思</del>。</p>
+<p>簡單來說就是，function盡可能遵守一個最小功能原則，就好比拼lego一樣，我們想拼一個車子，我們可以先組裝輪子，底板，車身，每個部分都是可以被獨立組裝（define）。然後我們就像搭積木，把他們組合在一起。</p>
+<h1 id="結語"><a href="#結語" class="headerlink" title="結語"></a>結語</h1><p>最後再次祝大家聖誕快樂啦。其實也咕了很久了哈哈哈哈，也要跟大家說聲抱歉，我也開始被我的編輯老大催稿了，希望我能繼續一邊學習一邊上班一邊生產教學內容。</p>
 
                 
               </div>
@@ -392,8 +371,8 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>1. Arithmetic and Variables</div>
-      <div>http://example.com/2023/10/19/introduction-to-programming/</div>
+      <div>2. Function</div>
+      <div>http://example.com/2023/12/25/Function/</div>
     </div>
     <div class="license-meta">
       
@@ -405,7 +384,7 @@
       
         <div class="license-meta-item license-meta-date">
           <div>Posted on</div>
-          <div>October 19, 2023</div>
+          <div>December 25, 2023</div>
         </div>
       
       
@@ -437,18 +416,12 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2023/12/25/Function/" title="2. Function">
-                        <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">2. Function</span>
-                        <span class="visible-mobile">Previous</span>
-                      </a>
-                    
                   </article>
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2023/10/07/start/" title="Start">
-                        <span class="hidden-mobile">Start</span>
+                      <a href="/2023/10/19/introduction-to-programming/" title="1. Arithmetic and Variables">
+                        <span class="hidden-mobile">1. Arithmetic and Variables</span>
                         <span class="visible-mobile">Next</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
